@@ -3,7 +3,141 @@
 @import "fonts";
 @import "global";
 
+.header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 35px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+  }
+  &__select{
+    &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+    }
+  }
+  &__select{
+    &:first-child {
+      &::before {
+        background-image: url('../images/header__login.png');
+        width: 10px;
+        height: 12px;
+        top: 4px;
+      }
+    }
+    &:nth-child(2){
+      &::before{
+        background-image: url('../images/header__currency.png');
+        width: 10px;
+        height: 12px;
+        top: 4px;
+      }
+    }
+    &:nth-child(3) .jq-selectbox__select{
+      padding-left: 0;
+    }
+    & + & {
+      margin-left: 40px;
+    }
+  }
+  &__info-block{
+    margin-left: 40px;
+  }
+  &__info-block__number{
+    @extend %raleway__bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    margin: -10px 0 -10px;
+  }
+  &__info-block__description{
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+.menu{
+  position: relative;
+  &__btn{
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    div{
+      width: 100%;
+      height: 2px;
+      background-color: #0d3351;
+    }
+    div + div {
+      margin-top: 5px;
+    }
+  }
+  &__list{
+    display: none;
+    position: absolute;
+    width: 420px;
+    color: #fff;
+    padding: 70px 30px 75px;
+    background-color: #0d3351;
+    z-index: 5;
+    top: 27px;
+  }
+  &__list.menu__list--active{
+    display: block;
+  }
+  &__list-item{
+    @extend %roboto-slab__reg;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: .5px;
+    & + & {
+      margin-top: 30px;
+    }
+  }
+}
 
-
+.first-screen{
+  height: 76vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  width: 100%;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__line{
+    transform: translateY(60%);
+  }
+  &__textarea{
+    text-align: center;
+    transform: translateY(35%);
+  }
+  &__textarea-subtitle{
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: .5px;
+    margin-bottom: 45px;
+  }
+  &__textarea-title{
+    font-size: 100px;
+    line-height: 103px;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    margin-bottom: 45px;
+  }
+  &__link{
+    &.btn__link--active{
+      background-color: #64d6ff;
+    }
+  }
+}
 
 @import "media";

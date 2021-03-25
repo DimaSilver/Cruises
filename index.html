@@ -7,21 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Roboto+Slab&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="header__inner">
-        <menu class="menu">
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Популярные маршруты</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Расписание рейсов</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Забронированные рейсы</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Вход для партнеров</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">О компании</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
-        </menu>
+            <nav class="menu">
+                <div class="menu__btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Популярные маршруты</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Расписание рейсов</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Забронированные рейсы</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Вход для партнеров</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">О компании</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
             <div class="header__info">
                 <select class="header__select">
                     <option class="header__select-option">Личный кабинет</option>
@@ -45,10 +53,15 @@
 </header>
 <section class="first-screen" style="background-image: url('images/first-screen__bg.jpg');">
     <div class="container">
-        <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
-        <h5 class="subtitle section-title">Морские прогулки</h5>
-        <h1 class="title">по чёрному морю</h1>
-        <a class="first-screen__link btn__link" href="#">Выбрать круиз</a>
+        <div class="first-screen__inner">
+            <div class="first-screen__textarea">
+                <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                <h5 class="subtitle section-title first-screen__textarea-subtitle">Морские прогулки</h5>
+                <h1 class="title first-screen__textarea-title">по чёрному морю</h1>
+                <a class="first-screen__link btn__link" href="#">Выбрать круиз</a>
+            </div>
+            <img class="first-screen__line" src="images/first-screen__line.png" alt="">
+        </div>
     </div>
 </section>
 <section class="catalog">
@@ -62,67 +75,68 @@
                 <option class="sort-select__option">цене</option>
             </select>
         </div>
+        <div class="catalog__items">
+            <div class="catalog__item catalog__item-big hit">
+                <img class="catalog__item-img" src="images/catalog__item-img__1.jpg" alt="">
+                <div class="catalog__item-textarea">
+                    <h4 class="catalog__item-textarea__title">Морской круиз в Анапу</h4>
+                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</p>
+                    <p class="catalog__item-textarea__field"><span>родолжительность:</span>П 10 ч. 0 мин.</p>
+                    <div class="catalog__item-textarea__prices">
+                        <p class="catalog__item-textarea__prices-new">49 000 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item catalog__item-small discount">
+                <img class="catalog__item-img" src="images/catalog__item-img__2.jpg" alt="">
+                <div class="catalog__item-textarea">
+                    <h4 class="catalog__item-textarea__title">Обзорная морская прогулка с экскурсией</h4>
+                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</p>
+                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 1 ч. 0 мин.</p>
+                    <div class="catalog__item-textarea__prices">
+                        <p class="catalog__item-textarea__prices-new">5 000 руб.</p>
+                        <p class="catalog__item-textarea__prices-old">15000 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item catalog__item-small discount-num">
+                <img class="catalog__item-img" src="images/catalog__item-img__3.jpg" alt="">
+                <div class="catalog__item-textarea">
+                    <h4 class="catalog__item-textarea__title">Морская прогулка в Геленджик</h4>
+                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Туапсе-Геленджик</p>
+                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 12 ч. 30 мин.</p>
+                    <div class="catalog__item-textarea__prices">
+                        <p class="catalog__item-textarea__prices-new">7 000 руб.</p>
+                        <p class="catalog__item-textarea__prices-old">10000 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item catalog__item-middle discount-num">
+                <img class="catalog__item-img" src="images/catalog__item-img__4.jpg" alt="">
+                <div class="catalog__item-textarea">
+                    <h4 class="catalog__item-textarea__title">Морской круиз в Новороссийск</h4>
+                    <p class="catalog__item-textarea__field"><span>Маршрут:</span>
+                        Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
+                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 13 ч. 0 мин.</p>
+                    <div class="catalog__item-textarea__prices">
+                        <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item catalog__item-middle discount-num">
+                <img class="catalog__item-img" src="images/catalog__item-img__5.jpg" alt="">
+                <div class="catalog__item-textarea">
+                    <h4 class="catalog__item-textarea__title">Морская прогулка в Абрау-Дюрсо</h4>
+                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Абрау-Дюрсо</p>
+                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 11 ч. 0 мин.</p>
+                    <div class="catalog__item-textarea__prices">
+                        <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="catalog__link btn__link" href="#">Больше круизов</a>
     </div>
-    <div class="catalog__items">
-        <div class="catalog__item catalog__item-big hit">
-            <img class="catalog__item-img" src="images/catalog__item-img__1.jpg" alt="">
-            <div class="catalog__item-textarea">
-                <h4 class="catalog__item-textarea__title">Морской круиз в Анапу</h4>
-                <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</p>
-                <p class="catalog__item-textarea__field"><span>родолжительность:</span>П 10 ч. 0 мин.</p>
-                <div class="catalog__item-textarea__prices">
-                    <p class="catalog__item-textarea__prices-new">49 000 руб.</p>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__item catalog__item-small discount">
-            <img class="catalog__item-img" src="images/catalog__item-img__2.jpg" alt="">
-            <div class="catalog__item-textarea">
-                <h4 class="catalog__item-textarea__title">Обзорная морская прогулка с экскурсией</h4>
-                <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</p>
-                <p class="catalog__item-textarea__field"><span>Продолжительность:</span>  1 ч. 0 мин.</p>
-                <div class="catalog__item-textarea__prices">
-                    <p class="catalog__item-textarea__prices-new">5 000 руб.</p>
-                    <p class="catalog__item-textarea__prices-old">15000 руб.</p>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__item catalog__item-small discount-num">
-            <img class="catalog__item-img" src="images/catalog__item-img__3.jpg" alt="">
-            <div class="catalog__item-textarea">
-                <h4 class="catalog__item-textarea__title">Морская прогулка в Геленджик</h4>
-                <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Туапсе-Геленджик</p>
-                <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 12 ч. 30 мин.</p>
-                <div class="catalog__item-textarea__prices">
-                    <p class="catalog__item-textarea__prices-new">7 000 руб.</p>
-                    <p class="catalog__item-textarea__prices-old">10000 руб.</p>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__item catalog__item-middle discount-num">
-            <img class="catalog__item-img" src="images/catalog__item-img__4.jpg" alt="">
-            <div class="catalog__item-textarea">
-                <h4 class="catalog__item-textarea__title">Морской круиз в Новороссийск</h4>
-                <p class="catalog__item-textarea__field"><span>Маршрут:</span>  Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
-                <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 13 ч. 0 мин.</p>
-                <div class="catalog__item-textarea__prices">
-                    <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__item catalog__item-middle discount-num">
-            <img class="catalog__item-img" src="images/catalog__item-img__5.jpg" alt="">
-            <div class="catalog__item-textarea">
-                <h4 class="catalog__item-textarea__title">Морская прогулка в Абрау-Дюрсо</h4>
-                <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Абрау-Дюрсо</p>
-                <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 11 ч. 0 мин.</p>
-                <div class="catalog__item-textarea__prices">
-                    <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="catalog__link btn__link" href="#">Больше круизов</a>
 </section>
 <footer class="footer">
     <div class="container">
@@ -130,28 +144,35 @@
             <div class="footer__item">
                 <div class="footer__item-sub">
                     <ul class="footer__item-sub__list">
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#">Вход для партнеров</a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#">Вход для
+                            партнеров</a>
                         </li>
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#">О компании</a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#">О
+                            компании</a>
                         </li>
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#">Контакты</a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link"
+                                                                   href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__item-sub">
                     <p class="footer__item-sub__title">Будь на связи:</p>
                     <ul class="footer__item-sub__list social-list">
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img class="footer__item-sub__list-link__img"
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img
+                                class="footer__item-sub__list-link__img"
                                 src="images/vk.png" alt=""></a>
                         </li>
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img class="footer__item-sub__list-link__img"
-                                                                                                                      src="images/ok.png" alt=""></a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img
+                                class="footer__item-sub__list-link__img"
+                                src="images/ok.png" alt=""></a>
                         </li>
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img class="footer__item-sub__list-link__img"
-                                                                                                                      src="images/youtube.png" alt=""></a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img
+                                class="footer__item-sub__list-link__img"
+                                src="images/youtube.png" alt=""></a>
                         </li>
-                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img class="footer__item-sub__list-link__img"
-                                                                                                                      src="images/insta.png" alt=""></a>
+                        <li class="footer__item-sub__list-item"><a class="footer__item-sub__list-link" href="#"><img
+                                class="footer__item-sub__list-link__img"
+                                src="images/insta.png" alt=""></a>
                         </li>
                     </ul>
                 </div>
