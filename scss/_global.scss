@@ -26,6 +26,10 @@ a{
 }
 body{
   @extend %raleway__regular;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .5px;
 }
 .container{
   max-width: 1170px;
@@ -107,4 +111,9 @@ body{
   &:hover{
     background-color: #13b0e9;
   }
+}
+.section-title{
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: .5px;
 }

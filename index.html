@@ -66,7 +66,7 @@
 </section>
 <section class="catalog">
     <div class="container">
-        <h3 class="section-title">Каталог круизов</h3>
+        <h3 class="catalog__title section-title">Каталог круизов</h3>
         <div class="catalog-sort sort">
             <p class="catalog__text">Сортировать круизы по </p>
             <select class="sort-select">
@@ -79,42 +79,48 @@
             <div class="catalog__item catalog__item-big hit">
                 <img class="catalog__item-img" src="images/catalog__item-img__1.jpg" alt="">
                 <div class="catalog__item-textarea">
-                    <h4 class="catalog__item-textarea__title">Морской круиз в Анапу</h4>
+                    <a class="catalog__item-textarea__title-link" href="#"><h4 class="catalog__item-textarea__title">
+                        Морской круиз в Анапу</h4></a>
                     <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</p>
-                    <p class="catalog__item-textarea__field"><span>родолжительность:</span>П 10 ч. 0 мин.</p>
+                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 10 ч. 0 мин.</p>
                     <div class="catalog__item-textarea__prices">
                         <p class="catalog__item-textarea__prices-new">49 000 руб.</p>
                     </div>
                 </div>
             </div>
-            <div class="catalog__item catalog__item-small discount">
-                <img class="catalog__item-img" src="images/catalog__item-img__2.jpg" alt="">
-                <div class="catalog__item-textarea">
-                    <h4 class="catalog__item-textarea__title">Обзорная морская прогулка с экскурсией</h4>
-                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</p>
-                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 1 ч. 0 мин.</p>
-                    <div class="catalog__item-textarea__prices">
-                        <p class="catalog__item-textarea__prices-new">5 000 руб.</p>
-                        <p class="catalog__item-textarea__prices-old">15000 руб.</p>
+            <div class="catalog__items-inner">
+                <div class="catalog__item catalog__item-small discount">
+                    <img class="catalog__item-img" src="images/catalog__item-img__2.jpg" alt="">
+                    <div class="catalog__item-textarea">
+                        <a class="catalog__item-textarea__title-link" href="#"><h4
+                                class="catalog__item-textarea__title">Обзорная морская прогулка с экскурсией</h4></a>
+                        <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</p>
+                        <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 1 ч. 0 мин.</p>
+                        <div class="catalog__item-textarea__prices prices-pack">
+                            <p class="catalog__item-textarea__prices-new">5 000 руб.</p>
+                            <p class="catalog__item-textarea__prices-old">15000 руб.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item catalog__item-small discount-num">
+                    <img class="catalog__item-img" src="images/catalog__item-img__3.jpg" alt="">
+                    <div class="catalog__item-textarea">
+                        <a class="catalog__item-textarea__title-link" href="#"><h4
+                                class="catalog__item-textarea__title">Морская прогулка в Геленджик</h4></a>
+                        <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Туапсе-Геленджик</p>
+                        <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 12 ч. 30 мин.</p>
+                        <div class="catalog__item-textarea__prices prices-pack">
+                            <p class="catalog__item-textarea__prices-new">7 000 руб.</p>
+                            <p class="catalog__item-textarea__prices-old">10000 руб.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="catalog__item catalog__item-small discount-num">
-                <img class="catalog__item-img" src="images/catalog__item-img__3.jpg" alt="">
-                <div class="catalog__item-textarea">
-                    <h4 class="catalog__item-textarea__title">Морская прогулка в Геленджик</h4>
-                    <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Туапсе-Геленджик</p>
-                    <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 12 ч. 30 мин.</p>
-                    <div class="catalog__item-textarea__prices">
-                        <p class="catalog__item-textarea__prices-new">7 000 руб.</p>
-                        <p class="catalog__item-textarea__prices-old">10000 руб.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog__item catalog__item-middle discount-num">
+            <div class="catalog__item catalog__item-middle">
                 <img class="catalog__item-img" src="images/catalog__item-img__4.jpg" alt="">
                 <div class="catalog__item-textarea">
-                    <h4 class="catalog__item-textarea__title">Морской круиз в Новороссийск</h4>
+                    <a class="catalog__item-textarea__title-link" href="#"><h4 class="catalog__item-textarea__title">
+                        Морской круиз в Новороссийск</h4></a>
                     <p class="catalog__item-textarea__field"><span>Маршрут:</span>
                         Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
                     <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 13 ч. 0 мин.</p>
@@ -123,10 +129,11 @@
                     </div>
                 </div>
             </div>
-            <div class="catalog__item catalog__item-middle discount-num">
+            <div class="catalog__item catalog__item-middle">
                 <img class="catalog__item-img" src="images/catalog__item-img__5.jpg" alt="">
                 <div class="catalog__item-textarea">
-                    <h4 class="catalog__item-textarea__title">Морская прогулка в Абрау-Дюрсо</h4>
+                    <a class="catalog__item-textarea__title-link" href="#"><h4 class="catalog__item-textarea__title">
+                        Морская прогулка в Абрау-Дюрсо</h4></a>
                     <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Абрау-Дюрсо</p>
                     <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 11 ч. 0 мин.</p>
                     <div class="catalog__item-textarea__prices">
@@ -135,7 +142,9 @@
                 </div>
             </div>
         </div>
-        <a class="catalog__link btn__link" href="#">Больше круизов</a>
+        <div class="catalog__link-wrapper">
+            <a class="catalog__link btn__link" href="#">Больше круизов</a>
+        </div>
     </div>
 </section>
 <footer class="footer">
