@@ -288,5 +288,60 @@
     margin-top: 5px;
     text-align: center;
   }
+  &__link{
+    position: relative;
+    padding-left: 38px;
+    &::after{
+      position: absolute;
+      content: "";
+      right: 26px;
+      background-image: url('../images/catalog__link-after.png');
+      width: 8px;
+      height: 5px;
+      top: 50%;
+    }
+  }
+}
+/*end catalog*/
+
+/*start footer*/
+.footer{
+  background-color: #fff;
+  padding: 45px 0 40px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    &:first-child{
+      display: flex;
+      max-width: 445px;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .footer__item-sub:nth-child(2) .footer__item-sub__title{
+      margin: 0 0 10px 0;
+    }
+  }
+  &__item-sub__list.social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    .footer__item-sub__list-item .footer__item-sub__list-link {
+      width: 30px;
+      height: 30px;
+      background-color: #0d3351;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__item-sub__list.footer__menu{
+    .footer__item-sub__list-item + .footer__item-sub__list-item{
+      margin-top: 10px;
+    }
+  }
 }
 @import "media";
