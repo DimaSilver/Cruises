@@ -344,4 +344,53 @@
     }
   }
 }
+/*end footer*/
+
+/*start card-form*/
+.card-form{
+  max-width: 850px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 118px 48px 86px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__textarea{
+    max-width: 360px;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 23px;
+    color: #00a2dd;
+    margin-bottom: 30px;
+  }
+  &__field{
+    margin: 0;
+    span{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+  }
+  &__timetable{
+    margin-top: 10px;
+    .card-form__timetable-field{
+      &:last-child{
+        margin-top: 5px;
+      }
+    }
+  }
+  &__price{
+    margin: 25px 0 20px;
+  }
+  &__photos-big{
+    margin-bottom: 2px;
+  }
+  &__photos-small{
+    & + & {
+      margin-left: 6px;
+    }
+  }
+}
+/*end card-form*/
 @import "media";

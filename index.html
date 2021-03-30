@@ -32,16 +32,16 @@
             </nav>
             <div class="header__info">
                 <select class="header__select">
-                    <option class="header__select-option">Личный кабинет</option>
-                    <option class="header__select-option">Личный кабинет</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#card-form"></a>Личный кабинет</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#card-form"></a>Личный кабинет</option>
                 </select>
                 <select class="header__select">
-                    <option class="header__select-option">Рубль</option>
-                    <option class="header__select-option">Рубль</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#"></a>Рубль</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#"></a>Рубль</option>
                 </select>
                 <select class="header__select">
-                    <option class="header__select-option">Ru</option>
-                    <option class="header__select-option">Ru</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#"></a>Ru</option>
+                    <option class="header__select-option"><a class="header__select-option__link" href="#"></a>Ru</option>
                 </select>
                 <div class="header__info-block">
                     <p class="header__info-block__number">8 800 500-61-05 </p>
@@ -84,7 +84,7 @@
                     <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</p>
                     <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 10 ч. 0 мин.</p>
                     <div class="catalog__item-textarea__prices">
-                        <p class="catalog__item-textarea__prices-new">49 000 руб.</p>
+                        <a class="catalog__item-textarea__prices-new" href="#">49 000 руб.</a>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@
                         <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</p>
                         <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 1 ч. 0 мин.</p>
                         <div class="catalog__item-textarea__prices prices-pack">
-                            <p class="catalog__item-textarea__prices-new">5 000 руб.</p>
-                            <p class="catalog__item-textarea__prices-old">15000 руб.</p>
+                            <a class="catalog__item-textarea__prices-new" href="#">5 000 руб.</a>
+                            <a class="catalog__item-textarea__prices-old" href="#">15000 руб.</a>
                         </div>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
                         <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Туапсе-Геленджик</p>
                         <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 12 ч. 30 мин.</p>
                         <div class="catalog__item-textarea__prices prices-pack">
-                            <p class="catalog__item-textarea__prices-new">7 000 руб.</p>
-                            <p class="catalog__item-textarea__prices-old">10000 руб.</p>
+                            <a class="catalog__item-textarea__prices-new" href="#">7 000 руб.</a>
+                            <a class="catalog__item-textarea__prices-old" href="#">10000 руб.</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
                     <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 13 ч. 0 мин.</p>
                     <div class="catalog__item-textarea__prices">
-                        <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
+                        <a class="catalog__item-textarea__prices-new" href="#card-form">14 800 руб.</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                     <p class="catalog__item-textarea__field"><span>Маршрут:</span> Сочи-Абрау-Дюрсо</p>
                     <p class="catalog__item-textarea__field"><span>Продолжительность:</span> 11 ч. 0 мин.</p>
                     <div class="catalog__item-textarea__prices">
-                        <p class="catalog__item-textarea__prices-new">14 800 руб.</p>
+                        <a class="catalog__item-textarea__prices-new" href="#">14 800 руб.</a>
                     </div>
                 </div>
             </div>
@@ -147,6 +147,40 @@
         </div>
     </div>
 </section>
+<form id="card-form" class="card-form mfp-hide white-popup-block"><!--mfp-hide white-popup-block-->
+    <div class="card-form__inner">
+        <div class="card-form__photos">
+            <img class="card-form__photos-big" src="images/popup-img__1.jpg" alt="">
+            <div class="card-form__photos-smallblock">
+                <img class="card-form__photos-small" src="images/popup-img__small-1.jpg" alt="">
+                <img class="card-form__photos-small" src="images/popup-img__small-2.jpg" alt="">
+                <img class="card-form__photos-small" src="images/popup-img__small-3.jpg" alt="">
+                <img class="card-form__photos-small" src="images/popup-img__small-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-form__textarea">
+            <h3 class="card-form__title">
+                Морская прогулка в Абрау-Дюрсо
+            </h3>
+            <p class="card-form__field"><span>Маршрут:</span> Сочи - Абрау-Дюрсо</p>
+            <p class="card-form__field"><span>Продолжительность:</span> 11 ч. 0 мин.</p>
+            <div class="card-form__timetable">
+                <p class="card-form__field card-form__timetable-field"><span>Расписание:</span></p>
+                <p class="card-form__field card-form__timetable-field">Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40</p>
+                <p class="card-form__field card-form__timetable-field">Отправление из Абрау-Дюрсо: ежедневно
+                    в 12:25, 14:05, 15:45, 17:25, 19:05</p>
+                <p class="card-form__field card-form__timetable-field">
+                    Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде
+                </p>
+                <p class="card-form__field card-form__timetable-field">Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"</p>
+            </div>
+            <div class="card-form__price catalog__item-textarea__prices">
+                <p class="card-form__price-field catalog__item-textarea__prices-new">14 800 руб.</p>
+            </div>
+            <a class="card-form__link btn__link" href="#">Бронирование</a>
+        </div>
+    </div>
+</form>
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">

@@ -117,3 +117,18 @@ body{
   line-height: 39px;
   letter-spacing: .5px;
 }
+.mfp-content {
+  max-width: 850px;
+}
+.mfp-close-btn-in .mfp-close{
+  color: transparent;
+  top: 25px;
+  right: 33px;
+  &::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/popup-close.png');
+    width: 15px;
+    height: 17px;
+  }
+}
