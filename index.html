@@ -60,11 +60,15 @@
                 <h1 class="title first-screen__textarea-title">по чёрному морю</h1>
                 <a class="first-screen__link btn__link" href="#">Выбрать круиз</a>
             </div>
-            <img class="first-screen__line" src="images/first-screen__line.png" alt="">
+            <picture>
+                <source srcset="images/first-screen__line-responsible.png" media="(max-width: 800px)">
+                <img class="first-screen__line" src="images/first-screen__line.png" alt="">
+            </picture>
+
         </div>
     </div>
 </section>
-<section class="catalog">
+<!--<section class="catalog">
     <div class="container">
         <h3 class="catalog__title section-title">Каталог круизов</h3>
         <div class="catalog-sort sort">
@@ -244,7 +248,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 <script src="js/main.min.js"></script>
 </body>
 </html>
