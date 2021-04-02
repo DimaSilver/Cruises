@@ -278,6 +278,9 @@
       }
     }
   }
+  &__item-in{
+    display: none;
+  }
   &__item-textarea__prices-new{
     font-size: 30px;
     line-height: 34px;
@@ -300,6 +303,9 @@
       height: 5px;
       top: 50%;
     }
+  }
+  &__item-img__responsive{
+    display: none;
   }
 }
 /*end catalog*/
